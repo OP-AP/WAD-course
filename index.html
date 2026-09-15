@@ -1,0 +1,113 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="res/images/favicon.ico">
+    <title>My Dashboard</title>
+</head>
+
+<body>
+    <header>
+        <strong>Welcome to your dashboard!</strong>
+    </header>
+    <section>
+        <div>
+            <img src="res/images/me.png" width="128" height="128" alt="My picture">
+        </div>
+        <div>
+            <ul>
+                <li>Armuudu Armuudens</li>
+                <li>14/09/1929</li>
+                <li>Flying sphagetti monster</li>
+            </ul>
+        </div>
+        <div>
+            <strong>5.0</strong>
+        </div>
+    </section>
+    <section>
+        <h1>Courses</h1>
+        <table>
+            <thead>
+                <tr>
+                    <th>#</th>
+                    <th>Course Title</th>
+                    <th>Semester</th>
+                    <th>Grade</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td><a href="https://courses.cs.ut.ee/2026/ASD/fall" target="_blank">Agile software development</a>
+                    </td>
+                    <td>fall</td>
+                    <td>100</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td><a href="https://courses.cs.ut.ee/2026/systemsmodelling/fall" target="_blank">Systems
+                            modelling</a></td>
+                    <td>fall</td>
+                    <td>100</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td><a href="https://courses.cs.ut.ee/2026/RE/fall" target="_blank">Requirements Engineering</a>
+                    </td>
+                    <td>fall</td>
+                    <td>100</td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td><a href="https://courses.cs.ut.ee/2026/HCI/fall" target="_blank">Human Computer Interaction</a>
+                    </td>
+                    <td>fall</td>
+                    <td>100</td>
+                </tr>
+            </tbody>
+        </table>
+        <footer>
+            I am Groot (Taavi)
+        </footer>
+    </section>
+    <br>
+    <section>
+        <form action="" method="">
+            <label for="courseTitle">Course Title:</label>
+            <br>
+            <input type="text" id="courseTitle" name="courseTitle">
+            <br>
+            <br>
+            <label for="semester">Semester:</label>
+            <br>
+            <select id="semester" name="term">
+                <option value="fall">Fall</option>
+                <option value="spring">Spring</option>
+            </select>
+            <br>
+            <strong>Attendance:</strong>
+            <br>
+            <input type="radio" id="virtual" name="attendance_mode" value="virtual">
+            <label for="virtual">Virtual attendance</label>
+            <br>
+            <input type="radio" id="physical" name="attendance_mode" value="physical">
+            <label for="physical">Physical attendance</label>
+            
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+    <footer>
+        <ul>
+            <li>
+                <a href="https://ois2.ut.ee/" target="_blank">OIS</a>
+            </li>
+            <li>
+                <a href="https://courses.cs.ut.ee/" target="_blank">Courses</a>
+            </li>
+        </ul>
+    </footer>
+</body>
+
+</html>
