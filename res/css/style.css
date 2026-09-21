@@ -75,7 +75,7 @@ section {
 
 .nav {
     margin-top: 5px;
-     }
+}
 
 .nav a {
     padding: 10px 15px;
@@ -84,10 +84,75 @@ section {
     display: block;
     color: #34495e;
     font-size: .99em;
-       }
+}
 
 /* Pseudo-class selector */
 .nav a:hover {
     background-color: #7ebeb6;
     color: #092747;
-             }
+}
+
+
+  /* 
+      Applies when the browser's width is 800px wide or wider: 
+    */
+
+@media (min-width: 800px) {
+    .header,
+    .nav {
+        display: flex;
+    }
+    .header {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+    /* 
+     Applies when the browser's width is 1000px wide or wider: 
+     */
+
+@media (min-width: 1000px) {
+    .header {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}
+
+@media (max-width: 799px) {
+    .logo {
+        display: none;
+    }
+}
+
+.grid {
+        margin: 20px auto;
+        width: 100%;
+        border: 1px solid #746161;
+        background-color: #ddd;
+        display: grid;
+        grid-template-columns: auto auto;
+        /*     
+          grid-template-columns - the grid-template-columns CSS property defines the numbers and  
+          sizing functions of the grid columns.
+        */
+        gap: 10px 10px;
+        /* 
+        gap: row-gap and column-gap.
+        */
+    }
+
+    .grid p {
+        background-color: rgb(177, 164, 164);
+        color: white;
+        padding: 20px;
+        font-weight: bold;
+        text-align: center;
+    }
+
+
+    @media (max-width: 499px) {
+    .grid {
+        grid-template-columns: auto;
+    }
+}
