@@ -12,10 +12,28 @@
 body {
     line-height: 1.6;
     margin: 0;
+
+    section strong {
+        color: red;
+    }
+
+    tr>th {
+        background-color: #a2ccea;
+    }
+
+    td {
+        background-color: #eaf4fb;
+    }
+
+    p::first-letter{
+        font-size: 2em;
+    }
+
+    
 }
 
 p:hover {
-        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.75);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.75);
 }
 
 ul {
@@ -168,8 +186,4 @@ border-radius: 5px;
     .grid {
         grid-template-columns: auto;
     }
-}
-
-section strong {
-    color: red;
 }
