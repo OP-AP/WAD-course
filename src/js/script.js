@@ -101,16 +101,16 @@ function fibonacci(n) {
     let a = 0
     let b = 1
     let result
-    let sequence = "Fibonacci Sequence: " + a + ", " + b
+    let outputArray = [0, 1]
 
     while (a + b <= n) {
         result = a + b
-        sequence += ", " + result
         a = b
         b = result
+    outputArray.push(result)
     }
 
-    console.log(sequence)
+    return outputArray
 }
 
 fibonacci(40)
