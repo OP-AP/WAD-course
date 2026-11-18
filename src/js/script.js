@@ -28,8 +28,8 @@ console.log("User Pets", userPets)
 while (userBalance > 0) {
     let spending = EVERY_DAY_SPENDING + everyDaySpendingPerPet * userPets.length
     userBalance -= spending
-    userBalance = userBalance - spending
-    daysSurvived++
+    //userBalance = userBalance - spending
+    //daysSurvived++
     daysSurvived = daysSurvived + 1
 }
 
@@ -49,17 +49,16 @@ nameVertical("Sarah")
 function code(n) {
     return (n < 100) ? "Not a valid code" :
         (n < 200) ? "Informational responses (100–199)" :
-        (n < 300) ? "Successful responses (200–299)" :
-        (n < 400) ? "Redirection messages (300–399)" :
-        (n < 500) ? "Client error responses (400–499)" :
-        (n < 600) ? "Server error responses (500–599)" :
-        "Not a valid code";
+            (n < 300) ? "Successful responses (200–299)" :
+                (n < 400) ? "Redirection messages (300–399)" :
+                    (n < 500) ? "Client error responses (400–499)" :
+                        (n < 600) ? "Server error responses (500–599)" :
+                            "Not a valid code";
 }
 // for example n = 121
 console.log(code(121))
 console.log(code(404))
-console.log(code(700));
-
+console.log(code(588));
 
 
 // function compareVariables(var1, var2) {
@@ -68,7 +67,7 @@ console.log(code(700));
 
 //     if (var1 === var2) {
 //         console.log("The two variables have the same value and type")
-    
+
 //     } else if (var1 == var2) {
 //         console.log("The two variables have the same value but not the same type")
 //         console.log("the type of var1 is " + typeof var1)
@@ -93,9 +92,20 @@ function compareVariables(var1, var2) {
         console.log("the type of var2 is " + typeof var2)
         return
     }
-        console.log("The two variables do not have the same value nor the same type")
+    console.log("The two variables do not have the same value nor the same type")
 
 }
+
+compareVariables(1, "muna")
+compareVariables(1, 1)
+compareVariables(1, "1")
+
+
+
+
+
+
+
 
 function fibonacci(n) {
     let a = 0
@@ -107,16 +117,28 @@ function fibonacci(n) {
         result = a + b
         a = b
         b = result
-    outputArray.push(result)
+        outputArray.push(result)
     }
 
     return outputArray
 }
 
-fibonacci(40)
+console.log(fibonacci(40))
 
 // After completing the function pass different numbers instead of n and test the result.
 
-fibonacci(2);
+console.log(fibonacci(2));
 
 
+
+
+
+let courses = ["WAD", "SoftwareEngineering", "WebSecurity", "OOP"];
+let i = 0;
+
+for (; ;) {
+    if (i > (courses.length - 1))
+        break
+    console.log(courses[i])
+    i++
+}
